@@ -806,7 +806,7 @@ class SectionParser(object):
             self.default_order = "value:descr"
             self.orders = {}
 
-        self.version = version
+        self.version = float(version)
         self.section_name = title
 
         defs = defaults.ORDER_DEFINITIONS
